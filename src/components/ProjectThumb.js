@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
+
 import { Component } from 'react/cjs/react.production.min';
 
 export default class ProjectThumb extends Component {
@@ -7,7 +9,7 @@ export default class ProjectThumb extends Component {
   }
   render() {
     return(
-        <a href={`/projects/${this.props.projectId}`} className='project-thumb movTgt is-animation'>
+        <Link to={`/projects/${this.props.projectId}`} className='project-thumb movTgt is-animation'>
                 <div className='project-thumb__inner mb20'>
                     <figure className='project-thumb__img-wrapper slideimg'>
                         <div className='thumbslide'>
@@ -20,7 +22,7 @@ export default class ProjectThumb extends Component {
                 
                 <h5 className='project-thumb__title project-title'>{this.props.title}</h5>
                 <div className='project-thumb__category body-text'>{this.props.category}</div>
-        </a>
+        </Link>
     )
   }
 }

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { Link, NavLink } from 'react-router-dom';
+
 import ProjectDetail from '../components/ProjectDetail';
 import ProjectInfo from '../components/ProjectInfo';
 import projectData from '../ProjectData.json'
@@ -26,9 +28,9 @@ export default function TheProject(props) {
             <ProjectInfo index={props.index}/>
             <ProjectDetail index={props.index}/>
 
-            <a href='/projects'>
+            <Link to='/portfolio/projects'>
                 <button className='mint-btn m-center mt15p'>Back to List</button>
-            </a>
+            </Link>
             <a href='#top' className='back-to-top'>
                 <img src={process.env.PUBLIC_URL + `/assets-icon/back-to-top.svg`}/>
             </a>

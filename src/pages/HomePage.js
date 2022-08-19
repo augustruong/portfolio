@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function HomePage() {
   return (
@@ -20,12 +21,12 @@ export default function HomePage() {
             </div>
         </div>
         <div className='btn-wrapper'>
-            <a href='/about'>
+            <Link to='/portfolio/about'>
                 <button className='beige-btn'>About Me</button>
-            </a>
-            <a href='/projects'>
+            </Link>
+            <Link to='/portfolio/projects'>
                 <button className='mint-btn'>My Projects</button>
-            </a>
+            </Link>
         </div>
     </div>
   )

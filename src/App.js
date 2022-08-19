@@ -33,7 +33,7 @@ function App() {
           <Route path='/portfolio/projects/lemonpoly' element={<TheProject index = {5}/>} />          
         </Routes>
 
-        {/* <p className='copyright'>Copyright © 2022 August. All rights reserved.</p> */}
+        <p className='copyright'>Copyright © 2022 August. All rights reserved.</p>
       </Router>
     </>
   );

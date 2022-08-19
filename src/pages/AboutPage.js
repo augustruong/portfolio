@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+
 import { Modal } from '../components/Modal'
 
 export default function AboutPage() {
@@ -30,7 +32,7 @@ export default function AboutPage() {
                     We can do this together.
                 </div>
                 <div className='btn-wrapper'>
-                    <a href='/projects'><button className='beige-btn'>My Projects</button></a>
+                    <Link to='/portfolio/projects'><button className='beige-btn'>My Projects</button></Link>
                     
                     <button className='mint-btn'>Contact Me</button>
 
