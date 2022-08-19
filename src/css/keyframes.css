@@ -1,0 +1,19 @@
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes jitter {
+    50% { transform:skewY(1deg) skewX(-1deg) scale(1.04); } 
+}
+
+@keyframes tunnel {
+    0% { transform: perspective(200px); filter: opacity(0); }
+    50% { filter: opacity(100%); }
+    100% { transform: perspective(200px) translateZ(200px); }
+}
+
+@keyframes thumbHover { 0% {background-position:top;} 100% {background-position:bottom;} }
+@-webkit-keyframes thumbHover { 0% {background-position:top;} 100% {background-position:bottom;} }
+@keyframes thumbOut {100% {background-position:top;} }
+@-webkit-keyframes thumbOut { 100% {background-position:top;} }

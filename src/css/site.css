@@ -1,0 +1,170 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+Mouse
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+ナビゲーション
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+#nav-wrapper { display: block; position: fixed; width: 100%; top: 0; z-index: 999; }
+#nav-wrapper > a.logo { position: fixed; top: 30px; left: 50px; }
+#nav-wrapper > a.logo .logo-svg { width: 36px; }
+
+#nav-wrapper > #contact-btn { position: fixed; bottom: 30px; right: 30px;}
+#nav-wrapper > #contact-btn img { width: 60px; animation: jitter 800ms infinite;}
+#nav-wrapper > #contact-btn :hover { cursor: pointer; }
+
+#menu-btn { width: 25px; height: 20px; position: absolute; top: 30px; right: 30px; z-index: 100; }
+#menu-btn > .line { position: absolute; left: 0; width: 100%; height: 16%; transform-origin: center; background-color: #725B4C; border-radius: 4px; transition: 0.5s all linear; }
+#menu-btn > .line1 { top: 0; }
+#menu-btn > .line2 { width: 80%; top: 50%; transform: translateY(-50%); }
+#menu-btn > .line3 { top: 100%; transform: translateY(-100%); }
+
+#menu-btn > .check { position: absolute; z-index: 100; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+#menu-btn > .check:checked ~ .line1 { top: 50%; transform: translate(0, -50%) rotate(45deg); }
+#menu-btn > .check:checked ~ .line2 { width: 0; opacity: 0; }
+#menu-btn > .check:checked ~ .line3 { top: 50%; transform: translate(0, -50%) rotate(-45deg); }
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    background-color: var(--beige-color);
+    clip-path: inset(0 0 0 100%);
+    padding-top: 90px;
+    z-index: 99;
+    overflow-y: scroll;
+}
+.nav::-webkit-scrollbar { display: none;  /* Safari and Chrome */ }
+
+.nav.active { clip-path: unset; pointer-events: auto; }
+
+.nav.hover-within { background-color: transparent; }
+.nav.hover-within .nav__item__title, .nav.hover-within .nav__item__category{ color: var(--beige-color); }
+
+ul.nav__list.main {
+    border-bottom: 1px solid var(--grey-color);
+    padding-bottom: 2rem;
+}
+
+.nav__item {
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    color: #725B4C;
+    transition: color .25s cubic-bezier(.25,1,.5,1);
+}
+
+.nav__item.projects {
+    display: block;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-left: 10%;
+    color: #725B4C;
+    transition: color .25s cubic-bezier(.25,1,.5,1);
+}
+
+.nav__item:hover {
+    background-color: var(--hover-bg-color);
+    transition: background-color .5s cubic-bezier(.25,1,.5,1);
+}
+
+.nav-backdrop {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,transparent,#000);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    transition: opacity 1s cubic-bezier(.25,1,.5,1);
+}
+
+.project-visual {
+    --transition-duration: 1s;
+    --transition-ease: cubic-bezier(1,0,1,0);
+    position: relative;
+    z-index: 1;
+}
+
+.project-visual.active {
+    --transition-duration: 250ms;
+    --transition-ease: cubic-bezier(0.25,1,0.5,1);
+}
+
+.project-visual img {
+    display: none;
+}
+
+.project-visual.active img {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+}
+
+.nav-backdrop.active {
+    pointer-events: auto;
+    opacity: .5;
+}
+
+@media (min-width: 56.25em) {
+    .project-visual img {
+        display: initial;
+        transform: scale(1.15);
+        opacity: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        pointer-events: none;
+        transition: opacity var(--transition-duration) cubic-bezier(.25,1,.5,1),transform 6s cubic-bezier(0,.99,0,.99);
+    }
+}
+
+@media (min-width: 48em) {
+    .nav {
+        width: min(400px,100%);
+    }
+    
+    
+}
+
+@media (max-width: 512px) {
+    #nav-wrapper > a.logo {
+        top: 20px;
+        left: 20px;
+    }
+
+    #menu-btn {
+        top: 25px;
+        right: 25px;
+    }
+    .nav.hover-within {
+        background-color: var(--beige-color);
+    }
+    .nav.hover-within .nav__item__title, .nav.hover-within .nav__item__category{
+        color: var(--brown-color);
+    }
+    .nav__item:hover .nav__item__title, .nav__item:hover .nav__item__category {
+        color: var(--beige-color)!important;
+    }
+} 

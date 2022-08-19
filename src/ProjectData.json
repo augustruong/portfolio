@@ -1,0 +1,62 @@
+[
+    {
+        "projectId": "ochanomizu-dumplings",
+        "enTitle": "OCHANOMIZU SANPO DUMPLINGS",
+        "jaTitle": "お茶の水さんぽ ダンプリング編",
+        "year": "June 2022",
+        "team": "personal",
+        "category": "Landing Page, Illustration",
+        "bio": "お茶の水周辺のダンプリング店舗を紹介するWebサイト",
+        "url": "https://augustruong.github.io/dumplings/"
+    },
+    {
+        "projectId": "ramen-school",
+        "enTitle": "YAMATO ONLINE RAMEN SCHOOL",
+        "jaTitle": "大和オンラインラーメン学校",
+        "year": "August 2022",
+        "team": "Personal",
+        "category": "Landing Page Prototype, Illustration",
+        "bio": "e-ランニング ラーメン学校 ランディングページ",
+        "url": "https://bit.ly/3dCzkVo"
+    },
+    {
+        "projectId": "the-mysc-box",
+        "enTitle": "the mysc. box",
+        "jaTitle": "ミステリーボックス",
+        "year": "October 2021",
+        "team": "Group x Personal",
+        "category": "Web Prototype, Branding",
+        "bio": "架空のサブスクリプションサービスサイトをデザイン。Boxの中身は非公開で、毎月ユーザーの自宅に送付される",
+        "url": "https://adobe.ly/3ahqlba"
+    },
+    {
+        "projectId": "kedamono",
+        "enTitle": "TSUKIYO NO KEDAMONO",
+        "jaTitle": "月夜のケダモノ",
+        "year": "December 2021",
+        "team": "Group",
+        "category": "Web, Illustration",
+        "bio": "クリエイターが集まる架空のバー「月夜のケダモノ」のホームページ",
+        "url": "https://bit.ly/3bKWlVl"
+    },
+    {
+        "projectId": "calendar",
+        "enTitle": "ONE SONG A DAY CALENDAR",
+        "jaTitle": "一日一曲カレンダー2022",
+        "year": "August 2021",
+        "team": "Personal",
+        "category": "Product Design, Branding, Illustration",
+        "bio": "音楽が好きな方向け2022年の日めくりカレンダーとパケージ制作",
+        "url": "https://bit.ly/3uyeaxj"
+    },
+    {
+        "projectId": "lemonpoly",
+        "enTitle": "LEMONPOLY",
+        "jaTitle": "レモンポリー",
+        "year": "July 2022",
+        "team": "Personal",
+        "category": "Product Design, Branding, Illustration",
+        "bio": "夏の雰囲気を感じさせる子供向けボードゲームとパケージデザイン",
+        "url": "https://bit.ly/3RhaolG"
+    }
+]
