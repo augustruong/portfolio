@@ -33,12 +33,12 @@ export default function AboutPage() {
                 </div>
                 <div className='btn-wrapper'>
                     <Link to='/portfolio/projects'><button className='beige-btn'>My Projects</button></Link>
-                    
-                    <button className='mint-btn'>Contact Me</button>
-
+                    <button className='mint-btn' onClick={() => setShowModal(!showModal)}>Contact Me</button>                    
                 </div>
             </div>
         </section>
+        <Modal showModal={showModal} setShowModal={setShowModal} />
+
     </div>
   )
 }

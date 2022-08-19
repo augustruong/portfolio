@@ -4,7 +4,7 @@ import logo from '../logo.svg';
 import { Modal } from './Modal';
 import ProjectVisual from './ProjectVisual';
 
-export default function NavWrapper() {
+export default function NavWrapper(props) {
     const [showNav,setShowNav] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [pjName, setPjName] = useState("");
