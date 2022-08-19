@@ -15,8 +15,7 @@ export default function NavWrapper() {
           <img src={logo} className='logo-svg'/>
         </NavLink>
   
-        <div id='menu-btn' onClick={() => setShowNav(!showNav)}>
-          <input className='check' type="checkbox"/>
+        <div id='menu-btn' className={showNav ? 'check' : ''} onClick={() => setShowNav(!showNav)}>
           <span className='line line1'></span>
           <span className='line line2'></span>
           <span className='line line3'></span>
