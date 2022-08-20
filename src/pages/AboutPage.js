@@ -11,15 +11,16 @@ export default function AboutPage() {
         <section className='intro__section flex-column-ct'>
             <img className='ellipse' src={process.env.PUBLIC_URL + `/images/ellipse.png`}/>
             <div className='me-wrapper flex-column-ct justify-center mt50'>
-                <img className='me-tapioka-img' src="https://i.imgur.com/vltboBx.png"/>
+                <img className='me-tapioka-img' src="https://i.imgur.com/OSSrMhb.png"/>
+                <img className='stars-img' src="https://i.imgur.com/iv65Bkf.png"/>
                 <div className='circle'></div>
                 <h2 className='page-title'>August</h2>
                 
                 <div className='body-text'>
                     I’m Vietnamese living in Tokyo, Japan, <br/>
-                    Digital Hollywood University since 2019.<br/>
-                    Majoring in Website Direction and Design, <br/>
-                    fusing with UX/UI Design and Graphic Design. 
+                    <span className='highlight'>Digital Hollywood University</span> since 2019.<br/>
+                    Majoring in <span className='highlight'>Website Direction and Design</span>, <br/>
+                    fusing with <span className='highlight'>UX/UI Design and Graphic Design</span>. 
                 </div>
             </div>
         </section>
@@ -30,8 +31,8 @@ export default function AboutPage() {
                 <div className='circle'></div>
                 <h2 className='page-title'>Challenge</h2>
                 <div className='body-text'>
-                    Challenging myself with any kind of concept. <br/>
-                    We can do this together.
+                    Challenge me with any kind of concept. <br/>
+                    We can get through this together.
                 </div>
                 <div className='btn-wrapper'>
                     <Link to='/portfolio/projects'><button className='beige-btn'>My Projects</button></Link>

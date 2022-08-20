@@ -84,6 +84,10 @@ p, .body-text {
     color: var(--brown-color);
 }
 
+span.highlight {
+    border-bottom: 4px dotted rgb(255, 221, 0);
+}
+
 dt,dd {
     font-family: var(--font-notosans);
     font-size: 14px;
