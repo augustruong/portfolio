@@ -53,7 +53,7 @@ h5 { font-size: 16px; }
 }
 
 .project-title {
-    font-family: var(--font-zetsubin);
+    font-family: var(--font-notosans);
     font-weight: 800;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -397,12 +397,12 @@ button {
 }
   
 .beige-btn:hover {
-    cursor: pointer;
+    cursor:var(--cursor-finger);
     background: #f8f8e7;
 }
   
 .mint-btn:hover {
-    cursor: pointer;
+    cursor:var(--cursor-finger);
     background: #9cf4da;
 }
   

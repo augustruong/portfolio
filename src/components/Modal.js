@@ -49,10 +49,10 @@ const ContactWrapper = styled.div`
     height: 16px;
   }
   .p-mail::before {
-    content:url("./assets-icon/mail.svg");
+    content: url("./assets-icon/i-mail.svg");
   }
   .p-phone::before {
-    content:url("./assets-icon/phone.svg");
+    content: url("./assets-icon/i-phone.svg");
   }
   @media screen and (max-width: 824px) {
     flex-direction: column;

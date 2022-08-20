@@ -172,7 +172,7 @@ Project Page
     border-radius: 7px;
 }
 #projects > .projects__header > .projects__nav > .projects__nav__item.active { background-color: #B4FBE6; }
-#projects > .projects__header > .projects__nav > .projects__nav__item:hover {font-weight: bold; cursor: pointer;}
+#projects > .projects__header > .projects__nav > .projects__nav__item:hover {font-weight: bold; cursor: var(--cursor-finger);}
 
 @media screen and (min-width: 1300px) { 
     #projects > .projects__header { 
@@ -444,7 +444,7 @@ The Project Detail
 }
 
 .icon-plus:hover {
-    cursor: pointer;
+    cursor: var(--cursor-finger);
     transform: scale(1.2);
     transition: transform var(--transition-hover), -webkit-transform var(--transition-hover);
 }
