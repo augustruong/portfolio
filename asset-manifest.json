@@ -1,20 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.10e49dce.css",
-    "main.js": "/portfolio/static/js/main.3ed639f3.js",
+    "main.css": "/portfolio/static/css/main.c51e2e73.css",
+    "main.js": "/portfolio/static/js/main.4260b1fe.js",
     "static/js/787.4bbf148f.chunk.js": "/portfolio/static/js/787.4bbf148f.chunk.js",
     "static/media/07鉄瓶ゴシック.otf": "/portfolio/static/media/07鉄瓶ゴシック.8603b973af317e3489e2.otf",
     "static/media/Blow.ttf": "/portfolio/static/media/Blow.bdf9242f3872ce76ece1.ttf",
-    "static/media/eight-half-1.png": "/portfolio/static/media/eight-half-1.3e58e4da9b85ad2e2746.png",
-    "static/media/eight-half-2.png": "/portfolio/static/media/eight-half-2.38665374cc7e65756730.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.febac0db08e413976d59abb9047a0542.svg",
     "index.html": "/portfolio/index.html",
-    "main.10e49dce.css.map": "/portfolio/static/css/main.10e49dce.css.map",
-    "main.3ed639f3.js.map": "/portfolio/static/js/main.3ed639f3.js.map",
+    "main.c51e2e73.css.map": "/portfolio/static/css/main.c51e2e73.css.map",
+    "main.4260b1fe.js.map": "/portfolio/static/js/main.4260b1fe.js.map",
     "787.4bbf148f.chunk.js.map": "/portfolio/static/js/787.4bbf148f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10e49dce.css",
-    "static/js/main.3ed639f3.js"
+    "static/css/main.c51e2e73.css",
+    "static/js/main.4260b1fe.js"
   ]
 }
