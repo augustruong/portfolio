@@ -9,8 +9,9 @@ export default function AboutPage() {
     return (
     <div id='about' className='flex-column-ct yellow-bg'>
         <section className='intro__section flex-column-ct'>
+            <img className='ellipse' src={process.env.PUBLIC_URL + `/images/ellipse.png`}/>
             <div className='me-wrapper flex-column-ct justify-center mt50'>
-                <img className='me-tapioka-img' src={process.env.PUBLIC_URL + `/images/me/profile.png`}/>
+                <img className='me-tapioka-img' src="https://i.imgur.com/vltboBx.png"/>
                 <div className='circle'></div>
                 <h2 className='page-title'>August</h2>
                 
@@ -23,8 +24,9 @@ export default function AboutPage() {
             </div>
         </section>
         <section className='challenge__section flex-column-ct'>
+            <img className='ellipse' src={process.env.PUBLIC_URL + `/images/ellipse.png`}/>
             <div className='me-wrapper flex-column-ct justify-center'>
-                <img className='me-jump-img' src={process.env.PUBLIC_URL + `/images/me/jump.png`}/>
+                <img className='me-jump-img' src={"https://i.imgur.com/0pzVkV2.png"}/>
                 <div className='circle'></div>
                 <h2 className='page-title'>Challenge</h2>
                 <div className='body-text'>

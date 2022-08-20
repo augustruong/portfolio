@@ -49,10 +49,10 @@ const ContactWrapper = styled.div`
     height: 16px;
   }
   .p-mail::before {
-    content: url("./assets-icon/i-mail.svg");
+    content: url("https://i.imgur.com/Ky1eiIl.png");
   }
   .p-phone::before {
-    content: url("./assets-icon/i-phone.svg");
+    content: url("https://i.imgur.com/zU4ISaG.png");
   }
   @media screen and (max-width: 824px) {
     flex-direction: column;
@@ -127,13 +127,13 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <h3>Drop me a <span>Hi</span>!</h3>
                 <MediaWrapper className='flex-row-ct'>
                   <a href='https://www.facebook.com/noiciuciu/' target="_blank">
-                    <img src={process.env.PUBLIC_URL + `/assets-icon/social-media/Facebook.png`}/>
+                    <img src={"https://i.imgur.com/JAI9GFF.png"}/>
                   </a>
                   <a href='https://www.instagram.com/augustruong/' target="_blank">
-                    <img src={process.env.PUBLIC_URL + `/assets-icon/social-media/Instagram.png`}/>
+                    <img src={"https://i.imgur.com/aOG7HrW.png"}/>
                   </a>
                   <a href='https://github.com/augustruong' target="_blank">
-                    <img src={process.env.PUBLIC_URL + `/assets-icon/social-media/Github.png`}/>
+                    <img src="https://i.imgur.com/eKfpnYE.png"/>
                   </a>
                 </MediaWrapper>
                 <ContactWrapper className='flex-row-ct'>
