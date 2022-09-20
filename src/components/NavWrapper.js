@@ -11,7 +11,7 @@ export default function NavWrapper(props) {
 
     return (
       <header id='nav-wrapper'>
-        <NavLink to='/portfolio' className='logo'>
+        <NavLink to='/' className='logo'>
           <img src={logo} className='logo-svg'/>
         </NavLink>
   
@@ -30,7 +30,7 @@ export default function NavWrapper(props) {
           <ul className='nav__list main'>
             <li className='nav__list__item'>
               <NavLink className='nav__item' 
-                  to='/portfolio'
+                  to='/'
                   style={{'--hover-bg-color': 'var(--yellow-color)'}}
                   onClick={() => setShowNav(false)}
                 >
@@ -43,7 +43,7 @@ export default function NavWrapper(props) {
             </li>
             <li className='nav__list__item'>
               <NavLink className='nav__item' 
-                  to='/portfolio/about'
+                  to='/about'
                   style={{'--hover-bg-color': 'var(--yellow-color)'}}
                   onClick={() => setShowNav(false)}
                 >
@@ -56,7 +56,7 @@ export default function NavWrapper(props) {
             </li>
             <li className='nav__list__item'>
               <NavLink className='nav__item' 
-                  to='/portfolio/projects'
+                  to='/projects'
                   style={{'--hover-bg-color': 'var(--yellow-color)'}}
                   onClick={() => setShowNav(false)}
                 >
@@ -72,7 +72,7 @@ export default function NavWrapper(props) {
           <ul className='nav__list'>
             <li className='nav__list__item'>
               <NavLink className='nav__item projects' 
-                 to='/portfolio/projects/ochanomizu-dumplings'
+                 to='/projects/ochanomizu-dumplings'
                  style={{'--hover-bg-color': '#B0723F'}}
                  onClick={() => setShowNav(false)}
                  onMouseEnter = {() => setPjName("ochanomizu-dumplings")}
@@ -88,7 +88,7 @@ export default function NavWrapper(props) {
             </li>
             <li className='nav__list__item'>
               <NavLink className='nav__item projects' 
-                 to='/portfolio/projects/ramen-school'
+                 to='/projects/ramen-school'
                  style={{'--hover-bg-color': '#F0D12D'}}
                  onClick={() => setShowNav(false)}
                  onMouseEnter = {() => setPjName("ramen-school")}
@@ -104,7 +104,7 @@ export default function NavWrapper(props) {
             </li>
             <li className='nav__list__item'>
               <NavLink className='nav__item projects' 
-                 to='/portfolio/projects/the-mysc-box'
+                 to='/projects/the-mysc-box'
                  style={{'--hover-bg-color': '#481C73'}}
                  onClick={() => setShowNav(false)}
                  onMouseEnter = {() => setPjName("the-mysc-box")}
@@ -120,7 +120,7 @@ export default function NavWrapper(props) {
             </li>
             <li className='nav__list__item'>
               <NavLink className='nav__item projects' 
-                 to='/portfolio/projects/kedamono'
+                 to='/projects/kedamono'
                  style={{'--hover-bg-color': '#DED90D'}}
                  onClick={() => setShowNav(false)}
                  onMouseEnter = {() => setPjName("kedamono")}
@@ -136,7 +136,7 @@ export default function NavWrapper(props) {
             </li>
             <li className='nav__list__item'>
               <NavLink className='nav__item projects' 
-                 to='/portfolio/projects/calendar'
+                 to='/projects/calendar'
                  style={{'--hover-bg-color': '#FD9AB2'}}
                  onClick={() => setShowNav(false)}
                  onMouseEnter = {() => setPjName("calendar")}
@@ -152,7 +152,7 @@ export default function NavWrapper(props) {
             </li>
             <li className='nav__list__item'>
               <NavLink className='nav__item projects' 
-                 to='/portfolio/projects/lemonpoly'
+                 to='/projects/lemonpoly'
                  style={{'--hover-bg-color': '#49A998'}}
                  onClick={() => setShowNav(false)}
                  onMouseEnter = {() => setPjName("lemonpoly")}
@@ -168,7 +168,7 @@ export default function NavWrapper(props) {
             </li>
             <li className='nav__list__item'>
               <NavLink className='nav__item' 
-                 to='/portfolio/projects/dulce'
+                 to='/projects/dulce'
                  style={{'--hover-bg-color': '#885513'}}
                  onClick={() => setShowNav(false)}
                  onMouseEnter = {() => setPjName("dulce")}

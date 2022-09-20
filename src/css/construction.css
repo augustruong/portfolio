@@ -535,6 +535,7 @@ The Project Detail
     display: block;
     width: 100%;
     margin: 0.5rem auto 1rem auto;
+    cursor: zoom-in;
 }
 
 @media screen and (min-width: 1024px) {

@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Project00(props) {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+  const [showBox, setShowBox] = useState(false);
+
   return (
-    <>
+    <div className='project-content-wrapper'>
       { props.section === "plan" && 
-        <>
+        <div>
+
           { props.language === "ja" &&
             <>
               <h4>制作過程</h4>
@@ -32,10 +36,10 @@ export default function Project00(props) {
               
             </>
           }
-        </>
+        </div>
       }
       { props.section === "design" && 
-        <>
+        <div>
         { props.language === "ja" &&
           <>
             <h4>ロゴ制作</h4>
@@ -48,8 +52,10 @@ export default function Project00(props) {
             /> 
             
             <h4>デザインの工夫ポイント</h4>
-            <img src={process.env.PUBLIC_URL + `/images/projects/ochanomizu-dumplings/design.png`} />
-          
+            <img src={process.env.PUBLIC_URL + `/images/projects/ochanomizu-dumplings/design.png`} 
+                 onClick={() => setShowBox(!showBox)}
+            />
+
           </>
         }
         { props.language === "en" &&
@@ -58,8 +64,8 @@ export default function Project00(props) {
             
           </>
         }
-        </>
+        </div>
       }
-    </>
+    </div>
   )
 }

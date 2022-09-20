@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ProjectThumb from '../components/ProjectThumb'
 
 export default function ProjectPage() {
     const [selectedCategory,setSelectedCategory] = useState("all")
+
+    useEffect(() => { window.scrollTo(0, 0); }, []);
 
     return (
         <div id='projects' className='beige-bg'>

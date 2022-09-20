@@ -8,6 +8,8 @@ import projectData from '../ProjectData.json'
 export default function TheProject(props) {
     const thisProject = projectData[props.index]
 
+    useEffect(() => { window.scrollTo(0, 0); }, []);
+
     return(
         <div className='the-project beige-bg'>
             <div id='top' className='the-project__header t-center'>
@@ -28,7 +30,7 @@ export default function TheProject(props) {
             <ProjectInfo index={props.index}/>
             <ProjectDetail index={props.index}/>
 
-            <Link to='/portfolio/projects'>
+            <Link to='/projects'>
                 <button className='mint-btn m-center mt15p'>Back to List</button>
             </Link>
             <a href='#top' className='back-to-top'>

@@ -9,7 +9,7 @@ export default class ProjectThumb extends Component {
   }
   render() {
     return(
-        <Link to={`/portfolio/projects/${this.props.projectId}`} className='project-thumb movTgt is-animation'>
+        <Link to={`/projects/${this.props.projectId}`} className='project-thumb movTgt is-animation'>
                 <div className='project-thumb__inner mb20'>
                     <figure className='project-thumb__img-wrapper slideimg'>
                         <div className='thumbslide'>

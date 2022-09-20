@@ -8,8 +8,6 @@ import Project03 from './project-contents/Project03'
 import Project04 from './project-contents/Project04'
 import Project05 from './project-contents/Project05'
 
-
-
 export default function ProjectDetail(props) {
     const thisProject = projectData[props.index]
 
@@ -19,6 +17,8 @@ export default function ProjectDetail(props) {
     
     return(
         <div className='project-detail'>
+            {/* <LightBox showBox={showBox} setShowBox={setShowBox} /> */}
+
             <nav className='project-detail__nav'>
                 <ul className='p-sticky'>   
                     <li className='project-detail__nav__cell'>

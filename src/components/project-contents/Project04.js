@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Project04(props) {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   return (
     <>
       { props.section === "plan" && 

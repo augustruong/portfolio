@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
 
 import NavWrapper from './components/NavWrapper';
 import HomePage from './pages/HomePage';
@@ -17,24 +17,24 @@ import './css/template.css';
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <NavWrapper/>
 
         <Routes>
-          <Route path='/portfolio' element={<HomePage/>} />
-          <Route path='/portfolio/about' element={<AboutPage/>} />
-          <Route path='/portfolio/projects' element={<ProjectPage/>} />
+          <Route path='/' element={<HomePage/>} />
+          <Route path='/about' element={<AboutPage/>} />
+          <Route path='/projects' element={<ProjectPage/>} />
 
-          <Route path='/portfolio/projects/ochanomizu-dumplings' element={<TheProject index = {0}/>} />
-          <Route path='/portfolio/projects/ramen-school' element={<TheProject index = {1}/>} />
-          <Route path='/portfolio/projects/the-mysc-box' element={<TheProject index = {2}/>} />
-          <Route path='/portfolio/projects/kedamono' element={<TheProject index = {3}/>} />
-          <Route path='/portfolio/projects/calendar' element={<TheProject index = {4}/>} />
-          <Route path='/portfolio/projects/lemonpoly' element={<TheProject index = {5}/>} />          
+          <Route path='/projects/ochanomizu-dumplings' element={<TheProject index = {0}/>} />
+          <Route path='/projects/ramen-school' element={<TheProject index = {1}/>} />
+          <Route path='/projects/the-mysc-box' element={<TheProject index = {2}/>} />
+          <Route path='/projects/kedamono' element={<TheProject index = {3}/>} />
+          <Route path='/projects/calendar' element={<TheProject index = {4}/>} />
+          <Route path='/projects/lemonpoly' element={<TheProject index = {5}/>} />          
         </Routes>
 
         <p className='copyright'>Copyright © 2022 August. All rights reserved.</p>
-      </Router>
+      </HashRouter>
     </>
   );
 }

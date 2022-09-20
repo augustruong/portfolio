@@ -21,10 +21,10 @@ export default function HomePage() {
             </div>
         </div>
         <div className='btn-wrapper'>
-            <Link to='/portfolio/about'>
+            <Link to='/about'>
                 <button className='beige-btn'>About Me</button>
             </Link>
-            <Link to='/portfolio/projects'>
+            <Link to='/projects'>
                 <button className='mint-btn'>My Projects</button>
             </Link>
         </div>

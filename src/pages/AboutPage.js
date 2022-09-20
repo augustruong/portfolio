@@ -5,6 +5,8 @@ import { Modal } from '../components/Modal'
 
 export default function AboutPage() {
     const [showModal, setShowModal] = useState(false);
+    
+    useEffect(() => { window.scrollTo(0, 0); }, []);
 
     return (
     <div id='about' className='flex-column-ct yellow-bg'>
@@ -19,8 +21,8 @@ export default function AboutPage() {
                 <div className='body-text'>
                     I’m Vietnamese living in Tokyo, Japan, <br/>
                     <span className='highlight'>Digital Hollywood University</span> since 2019.<br/>
-                    Majoring in <span className='highlight'>Website Direction and Design</span>, <br/>
-                    fusing with <span className='highlight'>UX/UI Design and Graphic Design</span>. 
+                    Majoring in <span className='highlight'>Web Direction and Design</span>, <br/>
+                    fusing with <span className='highlight'>UX/UI Design</span> and <span className='highlight'>Graphic Design</span>. 
                 </div>
             </div>
         </section>
@@ -35,7 +37,7 @@ export default function AboutPage() {
                     We can get through this together.
                 </div>
                 <div className='btn-wrapper'>
-                    <Link to='/portfolio/projects'><button className='beige-btn'>My Projects</button></Link>
+                    <Link to='/projects'><button className='beige-btn'>My Projects</button></Link>
                     <button className='mint-btn' onClick={() => setShowModal(!showModal)}>Contact Me</button>                    
                 </div>
             </div>

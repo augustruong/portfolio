@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Project01(props) {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+
   return (
     <>
       { props.section === "plan" && 
@@ -45,7 +47,7 @@ export default function Project01(props) {
             </p>
             
             <h4>デザインの工夫ポイント</h4>
-            {/* <img src={process.env.PUBLIC_URL + `/images/projects/ochanomizu-dumplings/design.png`} /> */}
+            <img src={process.env.PUBLIC_URL + `/images/projects/ramen-school/design.png`} />
           
           </>
         }
