@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 import projectData from '../ProjectData.json'
 
 import Project00 from './project-contents/Project00'
@@ -22,7 +23,8 @@ export default function ProjectDetail(props) {
             <nav className='project-detail__nav'>
                 <ul className='p-sticky'>   
                     <li className='project-detail__nav__cell'>
-                        <a href='#plan-section' 
+                        <Link to='plan-section' 
+                            spy={true} offset={50} duration={500}
                             className = {current === "plan" ? "active" : ""}
                             onClick = {() => setCurrent("plan")}
                         >
@@ -33,10 +35,11 @@ export default function ProjectDetail(props) {
                             <i className='arrow-down'>
                                 <img src={process.env.PUBLIC_URL + `/assets-icon/arrow-down.svg`}/>
                             </i>
-                        </a>
+                        </Link>
                     </li>
                     <li className='project-detail__nav__cell'>
-                        <a href='#design-section' 
+                        <Link to='design-section' 
+                            spy={true} offset={50} duration={500}
                             className={current === "design" ? "active" : ""}
                             onClick = {() => setCurrent("design")}
                         >
@@ -47,7 +50,7 @@ export default function ProjectDetail(props) {
                             <i className='arrow-down'>
                                 <img src={process.env.PUBLIC_URL + `/assets-icon/arrow-down.svg`}/>
                             </i>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>

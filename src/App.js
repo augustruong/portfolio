@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
 
 import NavWrapper from './components/NavWrapper';
 import HomePage from './pages/HomePage';
@@ -17,7 +17,7 @@ import './css/template.css';
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <NavWrapper/>
 
         <Routes>
@@ -34,7 +34,7 @@ function App() {
         </Routes>
 
         <p className='copyright'>Copyright © 2022 August. All rights reserved.</p>
-      </Router>
+      </HashRouter>
     </>
   );
 }
