@@ -52,7 +52,7 @@ export default function Project04(props) {
             <h4>商品の写真</h4>
             <img src={process.env.PUBLIC_URL + `/images/projects/calendar/product-pics.png`} />
 
-            <p>もっと見る：<a href={'https://bit.ly/3uyeaxj'} style={{color : 'rgb(196, 41, 41)', fontWeight : '800'}}>https://bit.ly/3uyeaxj</a></p>
+            <p>もっと見る：<a href={'https://bit.ly/3uyeaxj'} style={{color : 'rgb(196, 41, 41)', fontWeight : '800'}}>Click here</a></p>
           </>
         }
         { props.language === "en" &&

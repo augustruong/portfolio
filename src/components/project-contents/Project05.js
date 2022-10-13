@@ -51,7 +51,7 @@ export default function Project05(props) {
             <h4>デザインの工夫ポイント</h4>
             <img src={process.env.PUBLIC_URL + `/images/projects/lemonpoly/design.png`} />
           
-            <p>もっと見る：<a href={'https://bit.ly/3RhaolG'} style={{color : 'rgb(196, 41, 41)', fontWeight : '800'}}>https://bit.ly/3RhaolG</a></p>
+            <p>もっと見る：<a href={'https://bit.ly/3RhaolG'} style={{color : 'rgb(196, 41, 41)', fontWeight : '800'}}>Click here</a></p>
           </>
         }
         { props.language === "en" &&

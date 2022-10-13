@@ -244,7 +244,7 @@ Project Page
     position: relative;
     justify-content: start;
     padding-top: 0;
-    /* padding-bottom: 15vw; */
+    padding-bottom: 20%;
     width: calc(100% - 300px);
     margin: 0 auto;
     z-index: 98;

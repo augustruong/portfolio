@@ -9,21 +9,19 @@ export default function Project06(props) {
         <>
           { props.language === "ja" &&
             <>
-              <h4>制作のテーマ</h4>
+              <h4>制作の目的</h4>
               <p className='mb70'>
-                暑い夏にぴったりな「レモネード」をテーマにしました。レモネードと共に、背景はプールにし、夏っぽさと新鮮さを伝える配色を意識した。
+                ・東京で自分の体験と経験を共有する<br/>
+                ・東京の観光、場所、イベントを紹介する<br/>
               </p>
               <h4>ターゲット</h4>
               <p className='mb70'>
-                ・4才以上の子供<br/>
-                ・ボードゲームが好きな方<br/>
-                ・子供と一緒に遊びたい家族<br/>
+                ・東京を発見したい方<br/>
+                ・東京で留学生の生活を気にする方<br/>
               </p>
               <h4>制作過程</h4>
               <p className='mb70'>
-                「家でも夏を楽しむことができるデザイン」の授業課題で、夏の雰囲気を感じさせる子供向けボードゲーム「レモンポリー」を作った。
-                世界中で愛されているボードゲーム「モノポリー」と同じコンセプトだが、ルールをできるだけ簡単化することで、子供にもわかりやすいゲームを目指した。
-                ゲームプランの後、イラストを自分で作って、モックアップを作成した。
+              「August」は自分の英語の名前です。漢字で「八月」と「東京」の組み合わせでロゴを作りました。使用した写真は自分で撮影して、レタッチしました。各ポスト記述は地名でタイトルをつけて、内容は自分の言葉で自分の体験を英語で載りました。
               </p>
             </>
           }
@@ -38,20 +36,10 @@ export default function Project06(props) {
         <>
         { props.language === "ja" &&
           <>
-            <h4>ロゴ制作</h4>
-            <p className='mb50'>
-              角丸の文字で甘くて柔らかい感じを出した。
-              「ポ」の丸を濃い黄色でつけて、レモンのイメージに。ストロークをつくてどんな背景でも見やすくした。
-            </p>
-            <img src={process.env.PUBLIC_URL + `/images/projects/lemonpoly/logo.png`}
-                 style={{width : '60%'}}
-                 className='mb100'
-            /> 
-            
             <h4>デザインの工夫ポイント</h4>
-            <img src={process.env.PUBLIC_URL + `/images/projects/lemonpoly/design.png`} />
+            <img src={process.env.PUBLIC_URL + `/images/projects/augustokyo/design.png`} />
           
-            <p>もっと見る：<a href={'https://bit.ly/3RhaolG'} style={{color : 'rgb(196, 41, 41)', fontWeight : '800'}}>https://bit.ly/3RhaolG</a></p>
+            <p>もっと見る：<a href={'https://bit.ly/3SEglJH'} style={{color : 'rgb(196, 41, 41)', fontWeight : '800'}}>Click here</a></p>
           </>
         }
         { props.language === "en" &&

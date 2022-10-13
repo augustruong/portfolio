@@ -8,6 +8,8 @@ import Project02 from './project-contents/Project02'
 import Project03 from './project-contents/Project03'
 import Project04 from './project-contents/Project04'
 import Project05 from './project-contents/Project05'
+import Project06 from './project-contents/Project06'
+
 
 export default function ProjectDetail(props) {
     const thisProject = projectData[props.index]
@@ -79,6 +81,8 @@ export default function ProjectDetail(props) {
                         { props.index === 3 && <Project03 section="plan" language="ja"/>}
                         { props.index === 4 && <Project04 section="plan" language="ja"/>}
                         { props.index === 5 && <Project05 section="plan" language="ja"/>}
+                        { props.index === 6 && <Project06 section="plan" language="ja"/>}
+
                     </div>
                 </section>
 
@@ -107,6 +111,8 @@ export default function ProjectDetail(props) {
                         { props.index === 3 && <Project03 section="design" language="ja"/>}
                         { props.index === 4 && <Project04 section="design" language="ja"/>}
                         { props.index === 5 && <Project05 section="design" language="ja"/>}
+                        { props.index === 6 && <Project06 section="design" language="ja"/>}
+
                     </div>
                 </section>
             </div>
