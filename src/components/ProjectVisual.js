@@ -64,13 +64,23 @@ export default function ProjectVisual(props) {
                 width="2400" height="1500"
             />
         </picture>
+        <picture className={pjName === "augustokyo" ? 'project-visual active' : 'project-visual'}>
+            <source 
+                type="image/webp" 
+                srcSet={process.env.PUBLIC_URL + `/images/projects/augustokyo/project-visual.png`}
+            />
+            <img 
+                src={process.env.PUBLIC_URL + `/images/projects/augustokyo/project-visual.png`}
+                width="2400" height="1500"
+            />
+        </picture>
         <picture className={pjName === "dulce" ? 'project-visual active' : 'project-visual'}>
             <source 
                 type="image/webp" 
-                srcSet={process.env.PUBLIC_URL + `/images/projects/dulce/project-visual.png`}
+                srcSet={process.env.PUBLIC_URL + `/images/projects/augustokyo/project-visual.png`}
             />
             <img 
-                src={process.env.PUBLIC_URL + `/images/projects/dulce/project-visual.png`}
+                src={process.env.PUBLIC_URL + `/images/projects/augustokyo/project-visual.png`}
                 width="2400" height="1500"
             />
         </picture>

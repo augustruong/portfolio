@@ -30,7 +30,8 @@ function App() {
           <Route path='/projects/the-mysc-box' element={<TheProject index = {2}/>} />
           <Route path='/projects/kedamono' element={<TheProject index = {3}/>} />
           <Route path='/projects/calendar' element={<TheProject index = {4}/>} />
-          <Route path='/projects/lemonpoly' element={<TheProject index = {5}/>} />          
+          <Route path='/projects/lemonpoly' element={<TheProject index = {5}/>} />    
+          <Route path='/projects/augustokyo' element={<TheProject index = {6}/>} />          
         </Routes>
 
         <p className='copyright'>Copyright © 2022 August. All rights reserved.</p>

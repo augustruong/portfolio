@@ -40,6 +40,7 @@ export default function ProjectPage() {
                         <ProjectThumb projectId="the-mysc-box" title="the mysc. box" category="web, branding"/>
                         <ProjectThumb projectId="calendar" title="One Song A Day Calendar" category="product, branding, illustration"/>
                         <ProjectThumb projectId="lemonpoly" title="Lemonpoly" category="branding, illustration"/>
+                        <ProjectThumb projectId="augustokyo" title="August in Tokyo" category="web, blog"/>
                     </>
                 }
                 {selectedCategory === "web" &&
@@ -48,6 +49,7 @@ export default function ProjectPage() {
                         <ProjectThumb projectId="ramen-school" title="Yamato Online Ramen School" category="landing page, illustration"/>
                         <ProjectThumb projectId="kedamono" title="Tsukiyo no Kedamono" category="web, illustration"/>
                         <ProjectThumb projectId="the-mysc-box" title="the mysc. box" category="web, branding"/>
+                        <ProjectThumb projectId="augustokyo" title="August in Tokyo" category="web, blog"/>
                     </>
                 }
                 {selectedCategory === "product" &&

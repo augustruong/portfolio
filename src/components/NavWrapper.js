@@ -168,6 +168,22 @@ export default function NavWrapper(props) {
             </li>
             <li className='nav__list__item'>
               <NavLink className='nav__item' 
+                 to='/projects/augustokyo'
+                 style={{'--hover-bg-color': '#FFC130'}}
+                 onClick={() => setShowNav(false)}
+                 onMouseEnter = {() => setPjName("augustokyo")}
+                 onMouseLeave = {() => setPjName("")}
+              >
+                <div className='nav__item__transform-wrapper'
+                     style={showNav ? {opacity : 1, transform : `translate(0px,0px)`} : {opacity : 0, transform : `translate(${200}px,0px)`}}
+                >
+                  <h5 className='nav__item__title project-title'>August in Tokyo</h5>
+                  <div className='nav__item__category body-text'>web, blog</div>
+                </div>
+              </NavLink>
+            </li>
+            <li className='nav__list__item'>
+              <NavLink className='nav__item' 
                  to='/projects/dulce'
                  style={{'--hover-bg-color': '#885513'}}
                  onClick={() => setShowNav(false)}

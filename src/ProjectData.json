@@ -58,5 +58,15 @@
         "category": "Product Design, Branding, Illustration",
         "bio": "夏の雰囲気を感じさせる子供向けボードゲームとパケージデザイン",
         "url": "https://bit.ly/3RhaolG"
+    },
+    {
+        "projectId": "augustokyo",
+        "enTitle": "August in Tokyo",
+        "jaTitle": "August in Tokyo",
+        "year": "Sep 2022",
+        "team": "Personal",
+        "category": "Web, Blog",
+        "bio": "自分が東京で過ごしたの体験記のブログサイト",
+        "url": "https://bit.ly/3SEglJH"
     }
 ]

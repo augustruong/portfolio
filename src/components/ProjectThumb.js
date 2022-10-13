@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 
-import { Component } from 'react/cjs/react.production.min';
+// import { Component } from 'react/cjs/react.production.min';
 
-export default class ProjectThumb extends Component {
+export default class ProjectThumb extends React.Component {
   constructor(props) {
     super(props);
   }
