@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll'
+
 
 import ProjectDetail from '../components/ProjectDetail';
 import ProjectInfo from '../components/ProjectInfo';
@@ -30,12 +32,12 @@ export default function TheProject(props) {
             <ProjectInfo index={props.index}/>
             <ProjectDetail index={props.index}/>
 
-            <Link to='/projects'>
+            <NavLink to='/projects'>
                 <button className='mint-btn m-center mt15p'>Back to List</button>
-            </Link>
-            <a href='#top' className='back-to-top'>
+            </NavLink>
+            <Link to='top' className='back-to-top'>
                 <img src={process.env.PUBLIC_URL + `/assets-icon/back-to-top.svg`}/>
-            </a>
+            </Link>
         </div>
     )
 }

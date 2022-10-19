@@ -25,7 +25,7 @@ export default function ProjectInfo(props) {
                 </dl>
                 <dl className='project-info__table__cell'>
                     <dt>URL</dt>
-                    <dd><a href={thisProject.url}>{thisProject.url}</a></dd>
+                    <dd><a href={thisProject.url} target="_blank">{thisProject.url}</a></dd>
                 </dl>
             </div>
             <div className='project-info__img'>

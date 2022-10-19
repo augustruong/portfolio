@@ -33,8 +33,9 @@ export default function AboutPage() {
                 <div className='circle'></div>
                 <h2 className='page-title'>Challenge</h2>
                 <div className='body-text'>
-                    Challenge me with any kind of concept. <br/>
-                    We can get through this together.
+                    I'm a designer who knows programming.<br/>
+                    I learn front-end programming mostly myself.<br/>
+                    I'm ready to learn things and new challenges.<br/>
                 </div>
                 <div className='btn-wrapper'>
                     <Link to='/projects'><button className='beige-btn'>My Projects</button></Link>

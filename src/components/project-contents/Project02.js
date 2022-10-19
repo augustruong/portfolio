@@ -23,9 +23,9 @@ export default function Project02(props) {
               </p>
               <h4>制作過程</h4>
               <p className='mb70'>
-                授業の課題としてグループで制作。企画書、ブランドロゴ、コンテンツ、画像はグループで制作し、私はWebデザインを担当した。<br/>
+                授業の課題としてグループで制作。企画書、ブランドロゴ、コンテンツ、画像はグループで制作し、私は User Persona 設計とWebデザインを担当した。<br/>
                 「箱を開けると、何が飛び出す？」と考えると、バブルのイメージが浮かび上がった。夢とミステリー感にふさわしいと思い、バブルをメインビジュアルにした。
-                デザインコンセプトを決めた後、箱とバブルのイラスト、グラデーション背景を作成した。
+                デザインコンセプトを決めた後、箱とバブルのイラスト、グラデーション背景を作成した。最終評価は教授から「秀」を受けました。
               </p>
             </>
           }
@@ -48,7 +48,12 @@ export default function Project02(props) {
                  style={{width : '35%'}}
                  className='mb100'
             /> 
-            
+            <h4>ユーザーペルソナ</h4>
+            <img src={process.env.PUBLIC_URL + `/images/projects/the-mysc-box/user-persona.png`} />
+
+            <h4>サイト構造</h4>
+            <img src={process.env.PUBLIC_URL + `/images/projects/the-mysc-box/site-structure.png`} />
+
             <h4>デザインの工夫ポイント</h4>
             <img src={process.env.PUBLIC_URL + `/images/projects/the-mysc-box/design.png`} />
           

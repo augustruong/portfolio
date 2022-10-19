@@ -39,7 +39,7 @@ export default function Project06(props) {
             <h4>デザインの工夫ポイント</h4>
             <img src={process.env.PUBLIC_URL + `/images/projects/augustokyo/design.png`} />
           
-            <p>もっと見る：<a href={'https://bit.ly/3SEglJH'} style={{color : 'rgb(196, 41, 41)', fontWeight : '800'}}>Click here</a></p>
+            <p>もっと見る：<a href={'https://bit.ly/3SEglJH'} target="_blank" style={{color : 'rgb(196, 41, 41)', fontWeight : '800'}}>Click here</a></p>
           </>
         }
         { props.language === "en" &&
